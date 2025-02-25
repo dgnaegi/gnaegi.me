@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltpapierBot</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="content">
+            <div class="section">
+                <h1>AltpapierBot</h1>
+                <p>
+                    <a href="https://t.me/altpapierbot" target="_blank">AltpapierBot</a> is a service that provides paper and cardboard disposal reminders for the city of Zurich via Telegram. Once set up, you will receive a reminder on the evening before and on the early morning of the disposal day for your postal code.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Setup Instructions</h2>
+                <p>
+                    To set up the bot, send <code>/postalcode 8XXX</code> to the bot, replacing the X's with your actual postal code. To receive reminders in German, send <code>/plz 8XXX</code>. If you no longer need the service, you can unsubscribe from notifications by sending <code>stop</code>.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Additional Commands</h2>
+                <p>
+                    There are some additional commands for further settings. By sending <code>/de</code> respectively <code>/en</code>, you can change your contact language. Furthermore, sometimes further notifications will be sent to you about the service. You can deactivate that by sending <code>/stop_spam</code>, but this comes with the chance that you're going to miss relevant information.
+                </p>
+                <p>
+                    For more information, send <code>/help</code>.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="image-row">
+                    <img src="../img/bot1.gif" alt="AltpapierBot Image 1" class="content-image">
+                    <img src="../img/bot2.gif" alt="AltpapierBot Image 2" class="content-image">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Privacy Notice</h2>
+                <p>
+                    Only essential information necessary to deliver disposal reminders via Telegram is stored. We collect your chat ID, which is a unique identifier for the chat session and does not reveal any personal information about you. Additionally, we store your notification preferences and your preferred language setting.
+                </p>
+                <p>
+                    It is not possible for Telegram bots to read messages from a chat that are not explicitly addressed to them. The source code is open source and available at <a href="https://github.com/your-repo/altpapierbot" target="_blank" rel="noopener noreferrer">AltpapierBot on GitHub</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
