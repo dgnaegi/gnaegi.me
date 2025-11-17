@@ -96,6 +96,16 @@ body {
     background-color: #3d3d3d;
 }
 
+.gemeinderat-link {
+    background-color: #ff1975 !important;
+    color: #000000 !important;
+}
+
+.gemeinderat-link:hover {
+    background-color: #e01666 !important;
+    color: #000000 !important;
+}
+
 .link-icon {
     width: 24px;
     height: 24px;
