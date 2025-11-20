@@ -9,18 +9,22 @@ body {
     align-items: flex-start; /* Changed from center to flex-start */
     min-height: 100vh; /* Changed from height to min-height */
     overflow-y: auto; /* Allow body to scroll if content is too big */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
 }
 
 .terminal {
     background-color: #252526;
     border-radius: 8px;
     width: 600px;
+    max-width: 100%;
     padding: 5px;
     padding-top: 0px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     margin: 20px 0; /* Add some margin to avoid touching the edges */
+    box-sizing: border-box;
 }
 
 .header {
@@ -141,4 +145,26 @@ a {
 a:hover {
     text-decoration: underline;
     font-weight: bolder;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .terminal {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    
+    body {
+        padding: 0;
+    }
+    
+    .header {
+        padding: 10px 15px;
+    }
+    
+    .content {
+        padding: 10px 15px;
+    }
 }
